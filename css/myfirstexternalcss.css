@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+}
+p {
+  color: blue;
+}
+#p1 {
+  font-style: italic;
+  color: green;
+}
+.boldText {
+  font-weight: bold;
+}
+.card {
+  background-color: lightgrey;
+  border: 1px solid gray;
+  border-radius: 20px;
+  /* offset-x, offset-y, blur-radius, spread-radius, color */
+  box-shadow: 7px 7px 12px 2px darkgrey;
+  margin: 24px;
+  padding: 50px;
+}
+
+/* cursor: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+.button{
+  background: linear-gradient(to bottom, lightgreen, forestgreen);
+  border: 2px solid darkgreen;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 12px;
+  padding: 12px 24px;
+
+}
+
+/* pseudo-class */
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  background: linear-gradient(to bottom, forestgreen, lightgreen);
+}
