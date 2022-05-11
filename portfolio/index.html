@@ -11,35 +11,36 @@
       #header {
         margin: 0px;
         padding: 5px;
-        background-color: lightgrey;
+      
       }
-      #header div {
+      #header img {
         display: inline-block;
 
       }
-      #logo img{
+      #logo {
         align: left;
         display: inline-block;
 
       }
-      #navbar {
-        margin: 0px;
-        text-align: right;
+      #navbar li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 5px 10px;
       }
 
     </style>
   </head>
   <body>
     <div id="header">
-      <div id="logo">
-        <img
+        <img id="logo"
         width="300px"
         src="../images/kplogo.png" />
-      </div>
-      <div id="navbar">
-        <div>menu1</div>
-        <div>menu2</div>
-        <div>menu3</div>
+
+        <ul id="navbar">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+      </ul>
       </div>
 
     </div>
