@@ -11,22 +11,27 @@
         margin: 0px;
       }
       header {
+        text-align: center;
         margin: 0px;
-        padding: 25px;
+        padding: 5px;
+      }
+      section {
+        margin: 0px;
+      }
+      section ul {
+        text-align: center;
+      }
       }
       #logo {
-        align: left;
         display: inline-block;
-        width: 50%
       }
       nav {
-        text-align: right;
         vertical-align: top;
       }
       #navbar li {
         display: inline-block;
         list-style-type: none;
-        padding: 5px 10px;
+        margin: 5px 15px;
       }
       #navbar li a {
         color: black;
@@ -34,17 +39,22 @@
       }
       #navbar li:hover {
         border-bottom: 2px solid skyblue;
+        margin-bottom: auto;
       }
       #navbar li:active {
         color: skyblue;
       }
-      #pictable{
-        background-color: lightgrey;
+      #pictable {
         list-style-type: none;
-        margin: 10px 0px;
+        margin: 0px;
+      }
+      #pictable2 {
+        list-style-type: none;
+        margin: 0px;
       }
       .mockup {
         background-color: lighgrey;
+        display: inline-block;
         margin: 0px;
       }
 
@@ -60,7 +70,7 @@
         src="images/kplogo.png" />
     <nav id="nav">
         <ul id="navbar">
-        <li><a href="#">Projects</a></li>
+        <li><a href="index.html">Projects</a></li>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -68,7 +78,14 @@
     </header>
       <section>
         <ul id="pictable">
-          <li class="mockup"><img src="images/skydiving.jpeg" width="200" alt="null"</li>
+          <li class="mockup"><img src="images/skydiving.jpeg" width="300" alt="null"</li>
+          <li class="mockup"><img src="images/skydiving.jpeg" width="300" alt="null"</li>
+        </ul>
+      </section>
+      <section>
+        <ul id="pictable2">
+          <li class="mockup"><img src="images/skydiving.jpeg" width="300" alt="null"</li>
+          <li class="mockup"><img src="images/skydiving.jpeg" width="300" alt="null"</li>
         </ul>
       </section>
       <footer>This is the footer</footer>

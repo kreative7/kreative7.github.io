@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Quiz 3 review</title>
+    <style>
+      .padding1value {
+        /* 1 value gets set to all 4 sides */
+        padding: 24px;
+      }
+      .padding2value {
+        /* 1st value sets top/bottom */
+        /* 2nd value set left/right */
+        padding: 12px 36px;
+      }
+      .padding3value {
+        /* 1st value sets top */
+        /* 2nd value set left/right */
+        /* 3rd value sets bottom */
+        padding: 12px 24px 36px;
+      }
+      .padding4value {
+        /* 1st value sets top, and then goes clockwise */
+        padding: 12px 24px 36px 72px;
+      }
+      .box {
+        background-color: skyblue;
+        border: 1px solid black;
+        display: inline-block;
+        padding: 50px;
+        margin-bottom: 36px;
+      }
+      .br1value {
+        /* 1 value gets set all 4 corners */
+        border-radius: 12px;
+      }
+      .br2value {
+        /* 1st value sets top-left/bottom-right */
+        /* 2nd value sets top-right/bottom-left */
+        border-radius: 12px 36px;
+      }
+      .br3value {
+        /* 1st value sets top-left */
+        /* 2nd value sets top-right/bottom-left */
+        /* 3rd value sets bottom/right */
+        border-radius: 12px 0px;
+      }
+      .br4value {
+          /* 1st value sets top-left, and then goes clockwise */
+        border-radius: 12px 50% 36px 10%;
+      }
+      .boxshadow {
+        /* offset-x, off-set-y, blur-radius, spread-radius, color */
+        box-shadow: 10px 15px 15px 5px grey;
+      }
+      .lineargradient1 {
+        /* remaining values are called color stops */
+        background: linear-gradient(to right, red, yellow, purple);
+      }
+      .lineargradient2 {
+        /* first value can be degrees */
+        /* color stops can use percentages to indicate location */
+        background: linear-gradient(45deg, aquamarine 50%, blue);
+      }
+      .radialgradient1 {
+        background: radial-gradient(yellow, orange 20%, black);
+      }
+      .transparentbox {
+        /* first value specifies red from 0-255 */
+        /* second value specifies green from 0-255 */
+        /* third valua specifies blue from 0-255 */
+        /* fourth valua specifies alpha (transparent) from 0-1 */
+        background-color: rgba(255, 255, 0, 0.5);
+        margin: 36px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box padding1value">Padding 1 Value</div>
+    <div class="box padding2value">Padding 2 Value</div>
+    <div class="box padding3value">Padding 3 Value</div>
+    <div class="box padding4value">Padding 4 Value</div>
+    <br>
+    <div class="box br1value">Padding 1 Value</div>
+    <div class="box br2value">Padding 2 Value</div>
+    <div class="box br3value">Padding 3 Value</div>
+    <div class="box br4value">Padding 4 Value</div>
+    <br>
+    <div class="box boxshadow"> Box Shadow</div>
+    <br>
+    <div class="box lineargradient1">Linear Gradient</div>
+    <div class="box lineargradient2">Linear Gradient</div>
+    <br>
+    <div class="box radialgradient1">Radial Gradient</div>
+    <br>
+    <div class="box">
+    <div class="box transparenbox">See through</div>
+    </div>
+  </body>
+</html>

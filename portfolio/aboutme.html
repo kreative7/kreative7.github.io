@@ -2,8 +2,68 @@
 <html lang="en-US">
   <head>
     <title>About Me</title>
+    <style>
+    body {
+      color: black;
+      font-family: lato, sans-serif;
+      Font-size: 10pt;
+      margin: 0px;
+    }
+    header {
+      text-align: center;
+      margin: 0px;
+      padding: 5px;
+    }
+    section {
+      margin: 0px;
+    }
+    section ul {
+      text-align: center;
+    }
+    }
+    #logo {
+      display: inline-block;
+    }
+    nav {
+      vertical-align: top;
+    }
+    #navbar li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 5px 15px;
+    }
+    #navbar li a {
+      color: black;
+      text-decoration: none;
+    }
+    #navbar li:hover {
+      border-bottom: 2px solid skyblue;
+      margin-bottom: auto;
+    }
+    #navbar li:active {
+      color: skyblue;
+    }
+    footer {
+      text-align: center;
+    }
+    </style>
   </head>
   <body>
-    <h1>This is an About Me page</h1>
+    <header id="header">
+        <img id="logo"
+        width="300px"
+        src="../images/kplogo.png" />
+    <nav id="nav">
+        <ul id="navbar">
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <section>
+      <h1 style="text-align: center;">About Me</h1>
+    </section>
+      <footer>This is the footer</footer>
   </body>
 </html>
