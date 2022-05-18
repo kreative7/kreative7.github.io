@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Example</title>
+    <style>
+      /* Ugly table CSS */
+      #uglytable,
+      #uglytable caption,
+      #uglytable th,
+      #uglytable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 12px;
+      }
+      #tablehead {
+        background-color: pink;
+      }
+      #tablecell {
+        background-color: skyblue;
+      }
+      #column {
+        background-color: gray;
+      }
+      #uglytable {
+        margin-bottom: 48px;
+      }
+
+      /* Pretty Table CSS */
+      #prettytable {
+        border-collapse: collapse;
+      }
+      #pretytable th {
+        padding-bottom: 12px;
+        padding-right: 24px;
+      }
+      #prettytable td {
+        padding: 4px 0px;
+      }
+      #prettytable tr:nth-child(even) {
+        background-color: #F0F0F0;
+      }
+      #prettytable tr:hover {
+        background-color: #E0FFE0;
+      }
+
+      </style>
+
+  </head>
+  <body>
+    <!-- th= "table head" /header content -->
+  <table id="uglytable">
+    <caption> I am an ugly table</caption>
+    <colgoup>
+      <col id="column" span="2">
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr id="tablehead">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Animal</th>
+        <th>Least Favorite Food</th>
+        <tr>
+      </thead>
+      <!-- td= "table data" -->
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td> Smith</td>
+          <td>Dog</td>
+          <td>Fettuccine</td>
+
+        </tr>
+        <tr>
+          <td id="tablecell">John</td>
+          <td> Smith</td>
+          <td>Dog</td>
+          <td>Fettuccine</td>
+
+        </tr>
+        <tr>
+          <td>John</td>
+          <td> Smith</td>
+          <td>Dog</td>
+          <td>Fettuccine</td>
+
+        </tr>  <tr>
+            <td>John</td>
+            <td> Smith</td>
+            <td>Dog</td>
+            <td>Fettuccine</td>
+
+          </tr>
+
+        </tbody>
+    </table>
+    <table id="prettytable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Least Favorite Food</th>
+          <tr>
+        </thead>
+        <!-- td= "table data" -->
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td> Smith</td>
+            <td>Dog</td>
+            <td>Fettuccine</td>
+
+          </tr>
+          <tr>
+            <td>John</td>
+            <td> Smith</td>
+            <td>Dog</td>
+            <td>Fettuccine</td>
+
+          </tr>
+          <tr>
+            <td>John</td>
+            <td> Smith</td>
+            <td>Dog</td>
+            <td>Fettuccine</td>
+
+          </tr>  <tr>
+              <td>John</td>
+              <td> Smith</td>
+              <td>Dog</td>
+              <td>Fettuccine</td>
+
+            </tr>
+
+          </tbody>
+      </table>
+  </body>
+</html>
