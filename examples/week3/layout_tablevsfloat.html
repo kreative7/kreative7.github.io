@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Layout: Table vs. Float</title>
+    <style>
+
+      /*CSS common to both layouts */
+      .header {
+        background-color: lightgreen;
+        padding: 12px 24px;
+      }
+      .nav {
+        padding: 12px 24px;
+      }
+      .content {
+        padding: 36px;
+      }
+      .footer {
+        background-color: green;
+        padding: 12px 24px;
+      }
+      img.image1 {
+        float: right;
+        margin-left: 12px;
+        width: 300px;
+      }
+      img.image2 {
+        float: left;
+        margin-right: 12px;
+        width: 300px;
+      }
+      .clear {
+        clear: both;
+        margin: 48px;
+      }
+
+      /* CSS specific to the Table Layout */
+      #oldtable {
+        border-collapse: collapse;
+        margin-bottom: 48px;
+      }
+      #oldtable .nav {
+        background-color: #DDFFDD;
+      }
+
+      /*CSS specific to the Float Layout */
+
+      #oldfloat .nav {
+        background-color: #DDFFDD;
+        box-sizing: border-box;
+        float: left;
+        width: 20%;
+      }
+      #oldfloat .content {
+        box-sizing: border-box;
+        float: right;
+        width: 80%;
+      }
+      #oldfloat .main {
+        background: linear-gradient(to right, #DDFFDD 20%, white 20.0001%);
+      }
+
+      /* This is the clearfix */
+
+      #oldfloat .main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      </style>
+  </head>
+  <body>
+    <table id="oldtable">
+      <tr>
+        <td class="header" colspan="2">
+          <h1>This is how page layouts used to be done (with table)</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="nav">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Gallery</a></div>
+            <div><a href="#">About Me</a></div>
+            <div><a href="#">Contact</a></div>
+          </td>
+          <td class="content">
+          <img class="image1" src="../../images/image_1.jpeg" alt="panoramic">
+            <p> Doctrina ab quibusdam, mentitum graviterque sed offendit ea
+              consequat amet excepteur expetendis, e quamquam relinqueret,
+              esse sed expetendis, nescius de multos, iis aliquip
+              praesentibus nam fabulas firmissimum quo commodo. Esse
+              occaecat voluptate. Ne ingeniis id arbitror, malis iis
+              possumus. Enim exquisitaque incurreret ipsum cupidatat,
+              singulis o legam senserit, aut e irure quis veniam te an
+              sunt iudicem voluptatibus.Noster an incurreret si quorum an
+              a sint eram sunt nostrud eu elit offendit doctrina, hic
+              irure ullamco adipisicing. Export arbitror iudicem ea a duis
+              familiaritatem qui quae a doctrina in tamen ex labore
+              appellat appellat. Ea culpa velit ubi aliquip est litteris
+              domesticarum a consequat, quem a probant hic export eu culpa
+              id do eram possumus.</p>
+              <div class="clear"></div>
+
+            <img class="image2" src="../../images/skydiving.jpeg" alt="sky">
+            <p>Aute admodum qui distinguantur, vidisse ea arbitror,
+              ingeniis fore offendit e in illum occaecat. Tamen
+              instituendarum fabulas multos senserit. Quid si officia te
+              eram se de labore fugiat qui eiusmod. Quae te laboris eu
+              legam nam aut aute quid noster arbitror ab senserit fugiat
+              ipsum quibusdam dolore ex nam eiusmod et senserit.A anim nam
+              aute. Quae eiusmod cupidatat. Incurreret summis si doctrina
+              familiaritatem, si aut fugiat eiusmod hic fabulas ab tempor
+              officia, id ubi sint quamquam, sunt familiaritatem excepteur
+              duis appellat, si elit eram multos consequat, ne ullamco id
+              consequat, de quis eu minim.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="footer" colspan="2">
+            copyright &copy; Kreative7 2022
+          </td>
+
+        </tr>
+      </table>
+
+      <div id="oldfloat">
+        <div class="header">
+          <h1>This is how page layouts used to be done (with floats)</h1>
+          </div>
+
+      <div class="main">
+        <div class="nav">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Gallery</a></div>
+          <div><a href="#">About Me</a></div>
+          <div><a href="#">Contact</a></div>
+        </div>
+        <div class="content">
+          <img class="image1" src="../../images/image_1.jpeg" alt="panoramic">
+            <p> Doctrina ab quibusdam, mentitum graviterque sed offendit ea
+              consequat amet excepteur expetendis, e quamquam relinqueret,
+              esse sed expetendis, nescius de multos, iis aliquip
+              praesentibus nam fabulas firmissimum quo commodo. Esse
+              occaecat voluptate. Ne ingeniis id arbitror, malis iis
+              possumus. Enim exquisitaque incurreret ipsum cupidatat,
+              singulis o legam senserit, aut e irure quis veniam te an
+              sunt iudicem voluptatibus.Noster an incurreret si quorum an
+              a sint eram sunt nostrud eu elit offendit doctrina, hic
+              irure ullamco adipisicing. Export arbitror iudicem ea a duis
+              familiaritatem qui quae a doctrina in tamen ex labore
+              appellat appellat. Ea culpa velit ubi aliquip est litteris
+              domesticarum a consequat, quem a probant hic export eu culpa
+              id do eram possumus.</p>
+              <div class="clear"></div>
+
+            <img class="image2" src="../../images/skydiving.jpeg" alt="sky">
+            <p>Aute admodum qui distinguantur, vidisse ea arbitror,
+              ingeniis fore offendit e in illum occaecat. Tamen
+              instituendarum fabulas multos senserit. Quid si officia te
+              eram se de labore fugiat qui eiusmod. Quae te laboris eu
+              legam nam aut aute quid noster arbitror ab senserit fugiat
+              ipsum quibusdam dolore ex nam eiusmod et senserit.A anim nam
+              aute. Quae eiusmod cupidatat. Incurreret summis si doctrina
+              familiaritatem, si aut fugiat eiusmod hic fabulas ab tempor
+              officia, id ubi sint quamquam, sunt familiaritatem excepteur
+              duis appellat, si elit eram multos consequat, ne ullamco id
+              consequat, de quis eu minim.</p>
+        </div>
+      </div>
+      <div class="footer">
+        copyright &copy; Kreative7 2022
+        </div>
+        </div>
+  </body>
+</html>
