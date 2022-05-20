@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Flex demo 2 (Flex Container Properties)</title>
+    <style>
+      body {
+        font-family: lato;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .flexchild {
+        background-color: lavender;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+      }
+      .flexchildwide {
+        text-align: center;
+        width: 300px;
+      }
+      .flexchildtall {
+        height: 100px;
+      }
+      .flexchildgiant {
+        height: 200px;
+      }
+      .flexcontainer {
+        background-color: darksalmon;
+        border-radius: 4px;
+        display: flex;
+      }
+      .flexdirection{
+        /* Flex-direction values:
+        row, column
+        row-reverse, column-reverse */
+        flex-direction: row;
+      }
+      .flexwrap {
+        /* Flex-wrap values:
+        nowrap, wrap, wrap-reverse */
+        flex-wrap: nowrap;
+      }
+      .justifycontent {
+        /*
+        justify-content values:
+        felx-start, flex-center, flex-end, space-between, space-evenly
+        space-around */
+        justify-content: flex-start;
+      }
+      .alignitems {
+        /*
+        align-items values:
+        felx-start, center, flex-end, stretch, baseline */
+        align-items: flex-start:
+      }
+      .alighitems .flexchildtall {
+        padding-top: 50px;
+      }
+      .alignitems .flexchildgiant {
+        padding-top: 100px;
+      }
+      </style>
+  </head>
+  <body>
+    <h2>Default behavior</h2>
+    <div>
+      <div class="flexchild">A</div>
+      <div class="flexchild">B</div>
+      <div class="flexchild">C</div>
+      <div class="flexchild">D</div>
+      </div>
+      <h2>Default Flex behavior</h2>
+      <div class="flexcontainer">
+        <div class="flexchild">A</div>
+        <div class="flexchild">B</div>
+        <div class="flexchild">C</div>
+        <div class="flexchild">D</div>
+        </div>
+      <h2>Flex-direction example</h2>
+        <div class="flexcontainer flexdirection">
+          <div class="flexchild">A</div>
+          <div class="flexchild">B</div>
+          <div class="flexchild">C</div>
+          <div class="flexchild">D</div>
+          </div>
+        <h2>Flex-wram example</h2>
+            <div class="flexcontainer flexwrap">
+              <div class="flexchild">A</div>
+              <div class="flexchild flexchildwide">B</div>
+              <div class="flexchild">C</div>
+              <div class="flexchild flexchildwide">D</div>
+              <div class="flexchild flexchildwide">E</div>
+              <div class="flexchild">F</div>
+              </div>
+
+        <h2>Justify-content example</h2>
+            <div class="flexcontainer justifycontent">
+            <div class="flexchild">A</div>
+            <div class="flexchild flexchildwide">B</div>
+            <div class="flexchild">C</div>
+          </div>
+          <h2>Flex-wram example</h2>
+              <div class="flexcontainer alignitems">
+                <div class="flexchild">A</div>
+                <div class="flexchild flexchildtall">B</div>
+                <div class="flexchild">C</div>
+                <div class="flexchild flexchildgiant">D</div>
+                <div class="flexchild flexchildwide flexchildtall">E</div>
+                <div class="flexchild">F</div>
+                </div
+  </body>
+</html>
