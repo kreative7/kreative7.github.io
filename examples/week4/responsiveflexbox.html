@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Responsive Flexbox Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      header {
+        background-color: skyblue;
+        font-size: 24px;
+        padding: 12px 48px;
+      }
+      .normallink,
+      .importantlink {
+        padding: 12px 24px;
+      }
+      .normallink:hover,
+      .importantlink:hover {
+        cursor: pointer;
+        opacity: 60%;
+      }
+      .normallink {
+        background-color: coral;
+      }
+      .importantlink {
+        background-color: gold;
+      }
+      nav {
+        display: flex;
+      }
+      nav .normallink,
+      nav .importantlink {
+        flex-grow: 1;
+        text-align: center;
+      }
+      main {
+        padding: 12px 48px;
+      }
+      footer {
+        background-color: lavender;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      footer p {
+        flex-basis: 100%;
+        text-align: center;
+      }
+      footer .importantlink {
+        flex-grow: 2;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 799px) {
+        header {
+          font-size: 18px;
+        }
+        header,
+        main {
+          padding: 4px 36px;
+        }
+        nav {
+          flex-wrap: wrap;
+        }
+        nav .importantlink {
+          flex-basis: 100%;
+          padding: 16px;
+        }
+        nav .normallink {
+          flex-basis: 33.33%;
+          padding: 12px;
+        }
+        footer p {
+          order: 2;
+        }
+        footer .importantlink {
+          order: 1;
+          padding: 36px;
+        }
+      }
+
+      @media screen and (max-width: 479px){
+        header {
+          font-size: 14px;
+        }
+        header,
+        main {
+          padding: 4px 24px;
+        }
+        nav,
+        footer {
+          flex-direction: column;
+        }
+        footer .importantlink {
+          order: 1;
+        }
+        footer .importantlink:last-child {
+          order: 3;
+        }
+        footer p {
+          order: 2;
+        }
+      }
+
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Flexbox Example</h1>
+    </header>
+    <nav>
+      <div class="importantlink">Important Link 1</div>
+      <div class="normallink">Link 1</div>
+      <div class="normallink">Link 2</div>
+      <div class="normallink">Link 3</div>
+      <div class="importantlink">Important Link 2</div>
+    </nav>
+    <main>
+      <p>
+        De esse nostrud consequat, ingeniis ipsum sunt pariatur
+        amet, esse laboris voluptatibus et dolore ingeniis aut
+        offendit. E ita consectetur et est noster commodo
+        exercitation, ad e arbitrantur, ea summis mentitum, litteris
+        quem enim voluptate tempor, export eiusmod sed dolor summis
+        ne commodo quorum ingeniis ad do sed domesticarum. Quo amet
+        firmissimum a anim litteris ea possumus.Culpa de ab dolore
+        probant, veniam incididunt ea occaecat te aliquip quem
+        admodum, ita aute offendit instituendarum. O quorum quo
+        elit, ea quis nam esse, qui culpa dolore summis commodo, ab
+        doctrina firmissimum a commodo imitarentur ubi laboris, te
+        si relinqueret, sunt ut consequat est labore eu nostrud id
+        voluptate. Ita de dolor quae duis se constias tempor laboris
+        cernantur. Ita dolore multos ut commodo et velit do admodum
+        do sint, arbitror fugiat iis iudicem illustriora do ita sint
+        ab tempor.
+      </p>
+    </main>
+    <footer>
+      <p>Thanks for stopping by. Hope this helped!</p>
+      <div class="importantlink">Other Important Link 1</div>
+      <div class="importantlink">Other Important Link 2</div>
+    </footer>
+
+  </body>
+</html>
