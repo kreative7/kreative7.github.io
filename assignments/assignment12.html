@@ -51,10 +51,41 @@
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
 
+        aside {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        aside .fakeLink {
+          flex-basis: 50%;
+          padding: 48px;
+        }
+        aside .fakeLink2 {
+          flex-basis: 50%;
+          padding: 48px;
+        }
       }
 
       /* your CSS for desktop goes in here */
       @media screen and (min-width: 800px) {
+
+        nav {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        nav .fakeLink {
+          flex-basis: 33.33%;
+        }
+        aside {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        aside .fakeLink {
+          flex-basis: 100%;
+        }
+        aside .fakeLink2 {
+          flex-basis: 33.33%;
+          padding: 48px;
+        }
 
       }
     </style>

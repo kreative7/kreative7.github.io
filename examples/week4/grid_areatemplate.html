@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+        .mygrid {
+          display: grid;
+          grid-template-column: tepeat(3, 1fr);
+          grid-auto-rows: minmax(50px, auto);
+          grid-template-areas:
+          "header header header"
+          "sidenav content content";
+        }
+        header {
+          background-color: lightgreen;
+          padding: 36px;
+          grid-area: header;
+        }
+        nav {
+          background-color: #ddffdd;
+          padding: 36px;
+          grid-area: sidenav;
+        }
+        main {
+          padding: 36px;
+          grid-area: content;
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="mygrid">
+      <header>
+    <h1>This is a basic "Hello World" template for an HTML file.</h1>
+    </header>
+    <nav>Navigation goes here</nav>
+    <main>
+      <p>
+        Quo senserit ubi officia, id multos philosophari. Incurreret
+        praesentibus do excepteur. O sint consectetur ut multos sed
+        cupidatat in esse, constias quis pariatur mentitum, est fore
+        senserit quibusdam. Et irure eram eram appellat eu ea noster
+        nostrud coniunctione est fugiat mentitum nescius ab occaecat
+        cillum consequat quamquam.Sed tamen pariatur officia, aut
+        litteris ut pariatur quo hic dolore de sint quo export quo
+        commodo a quis aut illum ea occaecat ad dolore e magna
+        quamquam se irure velit ad fugiat mandaremus reprehenderit,
+        possumus e noster senserit. Si veniam incurreret consequat,
+        id nulla sempiternum, magna imitarentur consequat dolore
+        incurreret, sunt consequat se occaecat. Pariatur
+        fidelissimae ut aliquip, an est transferrem in non quem
+        laborum comprehenderit ad ab si amet quis enim.
+        </p>
+        <p>
+          Commodo nisi offendit consequat in a enim cupidatat
+          concursionibus do vidisse sempiternum si doctrina, fugiat ut
+          nostrud et fore. Pariatur quae te aliquip graviterque te
+          ullamco fugiat consequat a quo do minim cillum magna o
+          export an o minim aliquip aut eiusmod ea ullamco o quae
+          vidisse a proident, iis anim quibusdam, se nisi illum quae
+          voluptate. Ea quae dolore malis doctrina de do quae culpa ea
+          incurreret, quo ea duis tempor quorum sed anim proident
+          despicationes iis elit cernantur litteris nam aliqua
+          ingeniis ut coniunctione, offendit cillum senserit consequat
+          ut voluptate labore e incurreret coniunctione. Labore
+          vidisse firmissimum o proident amet export de cillum, quo
+          nostrud voluptatibus et officia reprehenderit est
+          ingeniis.Et excepteur coniunctione do constias export e
+          ingeniis illustriora. Multos ingeniis ne duis quem,
+          expetendis amet arbitror, incurreret aliqua nam proident
+          reprehenderit se se quid do quem. Eram quamquam fidelissimae
+          nam ea nescius distinguantur, litteris veniam nisi nostrud
+          irure, pariatur id laboris. Ipsum excepteur iis mentitum,
+          constias sed tamen.
+          </p>
+        </main>
+      </div>
+  </body>
+</html>
