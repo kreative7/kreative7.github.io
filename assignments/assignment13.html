@@ -9,12 +9,12 @@
       }
         .grid {
           display: grid;
-          grid-template-column: repeat(3, 1fr);
+          grid-template-column: repeat(5, 1fr);
           grid-auto-rows: minmax(50px, auto);
           grid-template-areas:
-          "header header header"
-          "sidenav content content"
-          "footer footer footer";
+          "header header header header header"
+          "sidenav content content content content"
+          "footer footer footer footer footer";
         }
         header {
           background-color: navy;
@@ -32,18 +32,18 @@
         color: navy;
         text-decoration: none;
       }
-        main {
+        section {
           background-color: lightblue;
           font-size: 10pt;
           padding: 20px;
           grid-area: content;
         }
-        main .image-1 {
+        section .image-1 {
           float: right;
           margin: 10px;
           width: 200px;
         }
-        main .image-2 {
+        section .image-2 {
           float: left;
           margin: 10px;
           width: 200px;
@@ -69,7 +69,7 @@
         <div><a href="#">About Me</a></div>
           <div><a href="#">Contact</a></div>
     </nav>
-    <main>
+    <section>
       <img class="image-1" src="../images/skydiving.jpeg">
       <p>
         Quo senserit ubi officia, id multos philosophari. Incurreret
@@ -97,7 +97,7 @@
           ingeniis ut coniunctione, offendit cillum senserit consequat
           ut voluptate labore e incurreret coniunctione.
           </p>
-        </main>
+        </section>
         <footer>copyright &copy 2022</footer>
       </div>
   </body>
