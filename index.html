@@ -3,7 +3,9 @@
   <head>
     <title>Kathian Pellot Portfolio</title>
     <style>
-
+    * {
+      box-sizing: border-box;
+    }
       body {
         color: black;
         font-family: lato, sans-serif;
@@ -11,58 +13,47 @@
         margin: 0px;
       }
       header {
-        margin-bottom: 48px;px;
-        padding: 5px;
-      }
-      section {
-        margin: 0px;
-      }
-      section ul {
-        text-align: center;
-      }
+        display: flex;
+        padding: 12px 24px;
       }
       #logo {
-        display: inline-block;
         float: left;
       }
-      nav {
-        float: right;
-        vertical-align: top;
-      }
-      #navbar li {
+      .navbar {
         display: inline-block;
-        list-style-type: none;
+        padding-top: 10px;
+      }
+      #nav div {
+        flex-direction: row;
         margin: 5px 15px;
       }
-      #navbar li a {
+      #nav div a {
         color: black;
         text-decoration: none;
       }
-      #navbar li:hover {
+      #nav div:hover {
         border-bottom: 2px solid skyblue;
         margin-bottom: auto;
       }
-      #navbar li:active {
+      #nav div:active {
         color: skyblue;
       }
-      #pictable {
-        list-style-type: none;
-        margin: 0px;
-      }
-      #pictable2 {
-        list-style-type: none;
-        margin: 0px;
-      }
-      .mockup {
-        display: inline-block;
-        margin: 0px;
-      }
+
+    section {
+      margin: 0px;
+    }
+    section ul {
+      text-align: center;
+    }
+
+      .clear:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
       .mockup img {
         width: 400px;
-      }
-
-      .clear {
-        clear: both;
       }
 
       footer {
@@ -70,6 +61,36 @@
         padding: 50px;
         text-align: center;
       }
+      @media screen and (min-width: 800px) {
+        .pictable {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          list-style-type: none;
+          margin: 0px;
+        }
+        .mockup img {
+          width: 400px;
+        }
+      }
+      @media screen and (min-width: 480px) and (max-width: 799px) {
+        .pictable {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          list-style-type: none;
+          margin: 0px;
+        }
+      }
+        @media screen and (max-width: 479px) {
+          .pictable {
+            float: left;
+            width: 100%;
+            list-style-type: none;
+            margin: 0px;
+          }
+        }
+
     </style>
   </head>
   <body>
@@ -78,24 +99,19 @@
         width="300px"
         src="images/kplogo.png" />
     <nav id="nav">
-        <ul id="navbar">
-        <li><a href="index.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+        <div class="navbar"><a href="index.html">Projects</a></div>
+        <div class="navbar"><a href="aboutme.html">About Me</a></div>
+        <div class="navbar"><a href="contact.html">Contact</a></div>
+
     </nav>
     </header>
       <section>
-        <ul id="pictable">
-          <li class="mockup"><img src="images/flyer.png"  alt="flyer"></li>
-          <li class="mockup"><img src="images/cover.png"  alt="cover"></li>
-        </ul>
-      </section>
-      <section>
-        <ul id="pictable2">
-          <li class="mockup"><img src="images/whr.png"  alt="logo"></li>
-          <li class="mockup"><img src="images/capi.png"  alt="packaging"></li>
-        </ul>
+
+          <div class="mockup pictable"><img src="images/flyer.png"  alt="flyer"></div>
+          <div class="mockup pictable"><img src="images/cover.png"  alt="cover"></div>
+          <div class="mockup pictable"><img src="images/whr.png"  alt="logo"></div>
+          <div class="clear"></div>
       </section>
       <footer>Copyright &copy 2022</footer>
   </body>
