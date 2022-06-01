@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transition Example</title>
+    <style>
+      #transition1 {
+        transition-property: color;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+      }
+      #transition1:hover {
+        color: red;
+      }
+      #box {
+        background-color: red;
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        transition:
+          background-color 2s,
+          border-radius 2s;
+      }
+      #box:hover {
+        background-color: blue;
+        border-radius: 50%
+      }
+      img {
+        width: 200px;
+        transition: transform 1s;
+      }
+      img:hover {
+        transform: scale(3) rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      This is a basic transition
+    </h1>
+    <div id="box"></div>
+    <img src="../../images/skydiving.jpeg">
+    <p>Ab o sint dolore nulla, probant amet culpa a tamen est
+      veniam fabulas ut eram noster ex iudicem e multos. Eram id
+      expetendis, mentitum ea minim, ab e familiaritatem, nescius
+      elit ipsum laboris malis si magna consequat quamquam, do se
+      multos litteris, offendit aliqua cupidatat cernantur an
+      admodum ita iudicem. Dolor fabulas qui illum dolor. Ex ubi
+      amet dolore quae.An te comprehenderit. Cillum non in noster
+      possumus, ipsum excepteur e quibusdam, aut magna
+      adipisicing, ipsum mentitum ea ingeniis. E illum magna nam
+      nostrud do enim litteris iis incididunt, ab velit tempor
+      aliqua iudicem, id aliqua si enim an an id reprehenderit,
+      aut aliqua quo eram est sint ubi arbitror si possumus ad
+      commodo.
+      </p>
+  </body>
+</html>

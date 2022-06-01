@@ -13,18 +13,20 @@
         margin: 0px;
       }
       header {
-        display: flex;
+        box-sizing: border-box;
         padding: 12px 24px;
       }
       #logo {
+        width: 300px;
+        display: inline-block;
         float: left;
       }
       .navbar {
-        display: inline-block;
+        float: right;
         padding-top: 10px;
       }
       #nav div {
-        flex-direction: row;
+        display: inline-block;
         margin: 5px 15px;
       }
       #nav div a {
@@ -40,11 +42,10 @@
       }
 
     section {
-      margin: 0px;
+      box-sizing: border-box;
+      margin-top: 50px;
     }
-    section ul {
-      text-align: center;
-    }
+
 
       .clear:after {
           content: "";
@@ -53,6 +54,7 @@
         }
 
       .mockup img {
+        box-sizing: border-box;
         width: 400px;
       }
 
@@ -80,6 +82,14 @@
           padding: 10px;
           list-style-type: none;
           margin: 0px;
+        }
+        #logo {
+          display: block;
+          text-align: center;
+        }
+        .navbar {
+          display: block;
+          text-align: center;
         }
       }
         @media screen and (max-width: 479px) {
