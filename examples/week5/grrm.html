@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <style>
+    body {
+      background-image: url("../images/name.jpg");
+      background-size: cover;
+    }
       #gridlayout {
         display: grid;
         grid-template-columns: 1fr repeat(3, 333px) 1fr;
@@ -55,11 +59,38 @@
       #bannercontainer {
         grid-area: banner;
       }
+      #bannercontainer img {
+        width: 100%;
+      }
       #cardscontainer {
+        display: flex;
         grid-area: cards;
+      }
+      #cardscontainer img {
+        flex-grow: 1;
       }
       aside {
         grid-area: aside;
+      }
+      #moreappearancescontainer {
+        background-image: url("../images/events-bg.jpg");
+        background-position: right bottom;
+        background-repeat: repeat;
+        background-color: black;
+        padding: 24px;
+      }
+      #moreappearancescontainer h3 {
+        color: white;
+        font-family: 'Montaga', serif;
+      }
+      .yellow {
+        color: #dbbf73;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .white {
+        color: white;
       }
       main {
         grid-area: blog;
@@ -93,6 +124,13 @@
           flex-direction: column;
           align-items: center;
         }
+        #cardscontainer {
+          flex-direction: column;
+        }
+        #cardscontainer img{
+          flex-grow: 0;
+          width: 100%;
+        }
       }
       </style>
   </head>
@@ -113,9 +151,21 @@
                       <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
-      <section id="bannercontainer">banner</section>
-      <section id="cardscontainer">cards</section>
-      <aside>aside</aside>
+      <section id="bannercontainer">
+      <img src="../images/FandB-banner.jpg" alt="fire and blood book"></section>
+      <section id="cardscontainer">
+      <img src="../images/card-theater.jpg" alt="theater">
+    <img src="../images/card-newsletter.jpg" alt="newsletter">
+  <img src="../images/card-available.jpg" alt="available">
+</section>
+      <aside>
+      <div>
+        <h3>NEXT APPEARANCE</h3>
+        <p class="yellow">August 26 - 28th, 2022</p>
+        <p><span class="underline white">Bubonicon 53</span><span class="white">Guest</span></p>
+        <img src="../images/more-appearances.jpg" alt="more appearances">
+      </div>
+    </aside>
       <main>blog</main>
       <footer>footer</footer>
       <div id="bottom">bottom</div>
