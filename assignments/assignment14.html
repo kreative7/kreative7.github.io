@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assigment 14</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+      body {
+        background-color: lightgrey;
+        font-family: lato, sans-serif;
+        text-align: center;
+      }
+
+      form {
+        box-sizing: border-box;
+        align-items: center;
+        background-color: white;
+        display: inline-grid;
+        justify-content: center;
+        padding: 25px;
+      }
+      #header {
+        margin-bottom: 50px;
+      }
+      #textbox {
+        align-items: center;
+
+
+
+
+
+      }
+      .content label {
+        display:block;
+        color: grey;
+        text-align: left;
+        font-size: 10pt;
+      }
+      .content input {
+        display:block;
+        border: 1px solid grey;
+        border-radius: 6px;
+        margin: 6px;
+        padding: 15px 150px;
+      }
+      #genderbox {
+      font-size: 10pt;
+      margin: 50px;
+      }
+      #genderbox input {
+        margin: 10px;
+      }
+      #button input {
+        padding: 10px 100px;
+      }
+
+
+
+
+
+      </style>
+  </head>
+  <body>
+    <form>
+      <div id="header">
+      <h3><strong>Personal information</strong></h3>
+      </div>
+      <div id="textbox">
+        <div class="content">
+        <label for="firstnameid">First Name</label>
+        <input type="text" id="firstnameid" name="firstname">
+        </div>
+        <div class="content">
+        <label for="middleinitial">Middle Initial</label>
+        <input type="text" id="middleinitial" name="middleinitial">
+        </div>
+        <div class="content">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname">
+        </div>
+      </div>
+        <div id="genderbox">
+          <h3><strong>Gender</strong></h3>
+          <input type="radio" id="female" name="female" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="male" value="male">
+          <label for="female">Male</label>
+          <input type="radio" id="male" name="male" value="male">
+          <label for="female">I don't want to share</label>
+        </div>
+          <div id="button">
+            <input type="submit" value="SUBMIT">
+            </div>
+
+
+    </form>
+  </body>
+</html>

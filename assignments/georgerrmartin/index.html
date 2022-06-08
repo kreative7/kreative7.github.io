@@ -12,9 +12,20 @@
           ". navbar navbar navbar ."
           ". banner banner banner ."
           ". cards cards cards ."
-          ". aside blog blog ."
+          ". aside content content ."
           ". footer footer footer ."
           ". bottom bottom bottom .";
+      }
+      header,
+      nav,
+      section,
+      aside,
+      footer,
+      #bottom {
+        border: 3px solid gray;
+      }
+      header {
+        grid-area: header;
       }
 
       </style>
@@ -22,7 +33,7 @@
   <body>
     <div id="grrmgrid">
       <header>
-        <img src="" alt="shield logo">
+        <img src="../../images/shield-spin.jpg" alt="shield logo">
         <h1>George R. R. Martin</h1>
         </header>
         <nav>

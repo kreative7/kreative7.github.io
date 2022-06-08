@@ -2,16 +2,77 @@
 <html lang="en-US">
   <head>
     <title>Form Example Part 1</title>
+    <style>
+    .textinput label {
+      display: block;
+    }
+    .textinput input {
+      margin: 4px 0px 12px 0px;
+      padding: 8px;
+      width: 200px;
+    }
+    #firstnamecontainer input {
+      border: 2px solid red;
+      border-radius: 4px;
+    }
+    #lastnamecontainer input {
+      border: 4px solid blue;
+      border-width: 0 0 4px 0;
+    }
+    textarea {
+      font-family: sans-serif;
+      margin-top: 4px;
+      padding: 8px;
+      width: 400px;
+    }
+    input[type=radio] {
+      margin: 16px;
+    }
+    #buttoncontainer{
+      margin: 24px 0px;
+    }
+    #buttoncontainer input[type=button] {
+      border: 1px solid black;
+      border-radius: 6px;
+      padding: 12px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    #buttoncontainer input:focus-visible {
+      outline: 0;
+    }
+    #buttoncontainer input[type=reset] {
+      border: 1px solid black;
+      border-radius: 6px;
+      margin-right: 12px;
+      padding: 12px;
+      cursor: pointer;
+      background: linear-gradient(to bottom, pink, orange);
+    }
+    #buttoncontainer input[type=reset]:active {
+      background: linear-gradient(to bottom, orange, pink);
+    }
+      #buttoncontainer input[type=submit] {
+        border: 0;
+        border-radius: 8px;
+        color: white;
+        margin: 12px;
+        padding: 12px 48px;
+        background: linear-gradient(to bottom, skyblue, teal);
+      }
+    </style>
   </head>
   <body>
-    <form>
+    <form action="submission_action.php">
+      <fieldset>
+        <legend>Form Fields</legend>
       <h2>Text Inputs</h2>
       <p>What is your name?</p>
-      <div>
+      <div id="firstnamecontainer" class="textinput">
         <label for="firstnameid">First Name:</label>
         <input type="text" id="firstnameid" name="firstname">
         </div>
-        <div>
+        <div id="lastnamecontainer"class="textinput">
           <label for="lastname">Last Name:</label>
           <input type="text" id="lastnameid" name="lastname">
           </div>
@@ -41,6 +102,48 @@
               Graphic Design and Web Development
               </label>
             </div>
+
+            <h2>Checkbox Inputs</h2>
+            <p>How do yu get to class?</p>
+            <div>
+              <input type="checkbox" id="bike" name="vehicleoption1" value="bike">
+              <label for="bike">Bike</label>
+            </div>
+            <div>
+              <input type="checkbox" id="bus" name="vehicleoption2" value="bus">
+              <label for="bus">Bus</label>
+            </div>
+            <div>
+              <input type="checkbox" id="car" name="vehicleoption3" value="car">
+              <label for="car">Car</label>
+            </div>
+            <h2>Date Input</h2>
+            <div>
+              <label for="dateid"> What is your birthday?</label>
+              <input type="date" id="dateid" name="bday">
+              </div>
+
+              <div>
+                <label for="time"> When do you wake up?</label>
+                <input type="time" id="time" name="wakeup">
+              </div>
+              <h2>Dropdown Input (select)</h2>
+              <div>
+                <label for="foodgroup"> What is your favorite food group</label>
+                <select id="foodgroup" name="foodgroup">
+                  <option value="">---Select an option---</option>
+                  <option value="fruits">Fruits</option>
+                  <option value="vegetables">Veggies</option>
+                  <option value="meats">Meats</option>
+                </select>
+
+                <h2>Button Inputs</h2>
+                <div id="buttoncontainer">
+                  <input type="button" value="Normal Button">
+                  <input type="reset" value="This will reset everything">
+                  <input type="submit" value="This will trigger the form action">
+                </div>
+              </fieldset>
             </form>
   </body>
 </html>
