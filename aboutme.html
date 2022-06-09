@@ -6,15 +6,39 @@
     body {
       color: black;
       font-family: lato, sans-serif;
-      Font-size: 10pt;
+      font-size: 10pt;
       margin: 0px;
     }
     header {
-      margin-bottom: 48px;
-      padding: 5px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px;
+    }
+    #logo {
+      display: inline-block;
+      height: 75px;
+    }
+    .navbar {
+      padding-top: 10px;
+    }
+    #nav div {
+      display: inline-block;
+      margin: 5px 15px;
+    }
+    #nav div a {
+      color: black;
+      text-decoration: none;
+    }
+    #nav div:hover {
+      border-bottom: 2px solid skyblue;
+      margin-bottom: auto;
+    }
+    #nav div:active {
+      color: skyblue;
     }
     section {
-      margin: 25px 50px;
+      margin: 25px 200px;
       text-align: justify;
     }
     section div{
@@ -26,29 +50,17 @@
     section ul {
       text-align: center;
     }
-    #logo {
+
+
+
+    #section2 {
+      text-align: center;
+    }
+    #programs {
       display: inline-block;
-      float; left;
     }
-    nav {
-      vertical-align: top;
-      float: right;
-    }
-    #navbar li {
-      display: inline-block;
-      list-style-type: none;
-      margin: 5px 15px;
-    }
-    #navbar li a {
-      color: black;
-      text-decoration: none;
-    }
-    #navbar li:hover {
-      border-bottom: 2px solid skyblue;
-      margin-bottom: auto;
-    }
-    #navbar li:active {
-      color: skyblue;
+    #programs img {
+      width: 75px;
     }
     footer {
       color: lightgrey;
@@ -57,12 +69,15 @@
     }
     @media screen and (min-width: 800px) {
       section {
-        margin-top: 50px;
+        margin: 25px 150px;
       }
 
     }
     @media screen and (min-width: 480px) and (max-width: 799px) {
 
+      section {
+        margin: 25px 100px;
+      }
       header {
         align-items: center;
         display: flex;
@@ -72,33 +87,67 @@
     }
       @media screen and (max-width: 479px) {
 
+        section {
+          margin: 25px 50px;
+        }
         header {
           display: flex;
           flex-direction: column;
           align-items: center;
         }
         #logo {
-          width: 250px;
+          height: 60px;
+        }
+      #programs img {
+        width: 50px;
       }
       }
     </style>
   </head>
   <body>
-    <header id="header">
-        <img id="logo" src="images/kplogo.png" width="300px" />
+    <header id="header grid">
+        <img id="logo"
+        src="images/kplogo.png" />
     <nav id="nav">
-        <ul id="navbar">
-        <li><a href="index.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+        <div class="navbar"><a href="index.html">Projects</a></div>
+        <div class="navbar"><a href="aboutme.html">About Me</a></div>
+        <div class="navbar"><a href="contact.html">Contact</a></div>
+
     </nav>
     </header>
-    <section>
+    <section id="section1">
       <div><img src="images/ID2.png"><div>
       <h1 style="text-align: center;">About Me</h1>
     </section>
-    <section>
+    <section id="section2">
+      <p>Proficient in</p>
+      <div id="programs">
+      <img src="images/AI-Blck-01.png" alt="Adobe Illustrator">
+      <img src="images/PS-Blck-01.png" alt="Adobe Photoshop">
+      <img src="images/XD-Blck-01.png" alt="Adobe Xd">
+      <img src="images/iD-Blck-01.png" alt="Adobe InDesign">
+      <img src="images/Wordpress-01.png" alt="Wordpress">
+      <img src="images/Micro-Blck-01.png" alt="Microsoft">
+
+    </div>
+  </section>
+      <section id="section3">
+      <p>Si minim quibusdam, et culpa admodum o de est quis veniam
+        nisi, nulla fabulas est labore quid. Mandaremus sunt ita
+        arbitror relinqueret, consequat coniunctione non appellat,
+        probant sunt ne proident consectetur sed ad culpa
+        praesentibus quo si vidisse do laborum, quibusdam quem dolor
+        se irure o nisi se admodum, de nulla export ita expetendis.
+        Enim do sed nisi laboris, ea fore domesticarum, nam irure
+        anim si voluptate an ex summis illum sint nescius. Iis non
+        sunt nisi malis.Ullamco malis laborum quibusdam, pariatur
+        quis summis ab culpa ne in litteris quo proident, veniam
+        offendit aut quae ipsum hic o quo domesticarum in ne fugiat
+        constias eu possumus sed quamquam et laboris culpa legam
+        cernantur labore. Quae de ut nulla proident. Officia enim
+        aut arbitror coniunctione.
+      </p>
       <p>Si minim quibusdam, et culpa admodum o de est quis veniam
         nisi, nulla fabulas est labore quid. Mandaremus sunt ita
         arbitror relinqueret, consequat coniunctione non appellat,
