@@ -22,22 +22,19 @@
           ". footer footer footer ."
           ". bottom bottom bottom .";
       }
-      header,
-      nav,
-      section,
-      aside,
-      footer,
-      #bottom {
-        border: 3px solid gray;
-      }
+
+
       header {
         align-items: center;
         display: flex;
         grid-area: header;
+        border-bottom: 1px solid grey;
+
       }
       header img {
         height: 100%;
         margin-right: 20px;
+        margin-left: 25px;
       }
       header h1 {
         font-size: 35pt;
@@ -45,25 +42,43 @@
       }
       nav {
         grid-area: navbar;
+        border-bottom: 1px solid grey;
+        margin: 5px 0px;
       }
       nav div {
         display: inline-block;
-        margin: 5px 10px;
+        margin: 5px 30px;
         text-decoration: none;
+
       }
       nav div a {
+        color: black;
         font-family: 'Montaga', serif;
+        font-size: 15px;
         text-decoration: none;
-        color: grey;
       }
+
       #banner {
         grid-area: banner;
       }
       #banner img{
         width:100%;
+
       }
       #content {
+        background-color: white;
         grid-area: content;
+        padding: 10px 20px;
+
+      }
+      #content h3 {
+        font-family: 'Montaga', serif;
+        font-size: 25px;
+      }
+      .title {
+        color: navy;
+        font-family: 'Montaga', serif;
+        font-size: 18px;
       }
       #cards {
         display: flex;
@@ -71,17 +86,76 @@
       }
       #cards img {
         width: 400px;
+
       }
       aside {
+        background-image:url(../../images/events-bg.jpg);
+        color: white;
         grid-area: aside;
+        padding: 10px 20px;
       }
+      aside h3 {
+        font-family: 'Montaga', serif;
+      }
+
+      #yellowtext {
+        color: gold;
+        font-size: 16px;
+      }
+      aside a {
+        color: white;
+        font-size: 16px;
+      }
+      aside span {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
       footer {
         grid-area: footer;
+        font-family: sans-serif;
+        text-align: center;
       }
       #bottom {
         grid-area: bottom
       }
+      
+        @media screen and (max-width: 479px){
+          #grrmgrid {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+              "header"
+              "navbar"
+              "banner"
+              "cards"
+              "aside"
+              "content"
+              "footer"
+              "bottom";
+          }
+          header{
+            display: block;
+            text-align: center;
+          }
 
+          header h1 {
+            display: block;
+          }
+          nav {
+          margin-bottom: 30px;
+          }
+          nav div {
+
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            text-align: center;
+
+          }
+          #cards {
+            display: block;
+          }
+        }
 
       </style>
   </head>
@@ -110,15 +184,22 @@
           <img src="../../images/card-available.jpg" alt="Wild Spririt">
         </section>
         <section id="content">
+          <h3>CURRENT GRRM BLOG POST</h3>
+          <div id="post1">
+            <p class="title">Six Days to Joe</p>
+            <p>Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this. Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+. Yes, it has “Winds” in the…<span class="link"><a href="#">Read more »</a></span></p>
+          </div>
 
           </section>
 
         <aside>
-
+          <h3>NEXT APPAREANCE<h3>
+            <p id="yellowtext">August 26 - 28th, 2022</p>
+            <a href="#">Bubonicon 53</a><span>Guest</span></p>
           </aside>
 
         <footer>
-
+          <p>&copy 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.</p>
           </footer>
           <div id="bottom">
           </div>
