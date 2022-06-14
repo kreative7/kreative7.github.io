@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 15</title>
+    <style>
+      body {
+        background-image: url(../images/count-back.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        margin: 0px;
+      }
+      #top {
+
+        padding: 15px;
+      }
+      #top img {
+        width: 100px;
+      }
+      #mid {
+        margin-top: 25%;
+        text-align: center;
+        font-size: 35px;
+      }
+      </style>
+  </head>
+  <body>
+    <div>
+      <div id="top">
+        <img src="../images/K-LOGO-Reverse.png">
+        </div>
+        <div id="mid">
+          <h1>Graduation 2022</h1>
+          <p>Sep 23</p>
+            </div>
+
+          <script type="text/javascript">
+            let deadline = new Date('Sep 23, 2022 23:00:00');
+            let countdown = document.getElementById("mid");
+
+            function setCountdown() {
+              let now = new Date();
+
+              let timeLeft = deadline.getTime() - now.getTime();
+
+              let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+              let hours = Math.floor((timeLeft % (1000 *60 *60 * 24)) / (1000 *60 *60));
+              let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+              let seconds = Math.floor((timeLeft % (1000 *60)) / 1000);
+
+              countdown.innerHTML =
+              `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+
+            setInterval(setCountdown, 1000);
+
+            </script>
+
+
+
+      </div>
+  </body>
+</html>
