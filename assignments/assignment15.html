@@ -2,12 +2,17 @@
 <html lang="en-US">
   <head>
     <title>Assignment 15</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  </head>
     <style>
       body {
         background-image: url(../images/count-back.jpg);
         background-position: center;
         background-size: cover;
         color: white;
+        font-family: Arial;
         margin: 0px;
       }
       #top {
@@ -17,8 +22,18 @@
       #top img {
         width: 100px;
       }
+      #title {
+        font-family: Kaushan Script;
+        text-align: center;
+        font-size: 35px;
+      }
       #mid {
-        margin-top: 25%;
+        background-color: white;
+        border-radius: 10px;
+        color: darkblue;
+        font-family: Arial;
+        margin: 0px 50px;
+        padding: 25px;
         text-align: center;
         font-size: 35px;
       }
@@ -29,14 +44,18 @@
       <div id="top">
         <img src="../images/K-LOGO-Reverse.png">
         </div>
-        <div id="mid">
+        <div id="title">
           <h1>Graduation 2022</h1>
+      </div>
+        <div id="mid">
           <p>Sep 23</p>
             </div>
 
           <script type="text/javascript">
+
             let deadline = new Date('Sep 23, 2022 23:00:00');
             let countdown = document.getElementById("mid");
+
 
             function setCountdown() {
               let now = new Date();
