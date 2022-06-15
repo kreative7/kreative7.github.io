@@ -1,7 +1,10 @@
+body {
+  text-align: center;
+}
 #slideshowimg {
   text-align: center;
 }
 
 .slideshowimg {
-  height: 500px;
+  height: 600px;
 }
