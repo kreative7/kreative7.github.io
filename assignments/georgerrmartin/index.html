@@ -110,6 +110,10 @@
         font-size: 16px;
         margin-left: 10px;
       }
+      #book {
+        display: inline-block;
+        height: 150px;
+      }
 
       footer {
         grid-area: footer;
@@ -119,7 +123,7 @@
       #bottom {
         grid-area: bottom
       }
-      
+
         @media screen and (max-width: 479px){
           #grrmgrid {
             grid-template-columns: 1fr;
@@ -136,10 +140,15 @@
           header{
             display: block;
             text-align: center;
+            padding: 25px;
+          }
+          header img {
+            height: 75px;
           }
 
           header h1 {
             display: block;
+            font-size: 35px;
           }
           nav {
           margin-bottom: 30px;
@@ -187,15 +196,28 @@
           <h3>CURRENT GRRM BLOG POST</h3>
           <div id="post1">
             <p class="title">Six Days to Joe</p>
-            <p>Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this. Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+. Yes, it has “Winds” in the…<span class="link"><a href="#">Read more »</a></span></p>
+            <p>Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this.
+              Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+.
+              Yes, it has “Winds” in the…<span class="link"><a href="#">Read more »</a></span></p>
           </div>
+          <div id="post2">
+
 
           </section>
 
         <aside>
-          <h3>NEXT APPAREANCE<h3>
+          <div id="aside1">
+            <h3>NEXT APPAREANCE<h3>
             <p id="yellowtext">August 26 - 28th, 2022</p>
             <a href="#">Bubonicon 53</a><span>Guest</span></p>
+          </div>
+          <div id="aside2">
+            <h3>NEXT PUBLICATION<h3>
+              <img id="book" src="../../images/grrm-book.jpg">
+              <p>July 02, 2022</p>
+              <p>FIRE & BLOOD</p>
+              <p>(HBO Tie-in Re-Release)</p>
+          </div>
           </aside>
 
         <footer>
