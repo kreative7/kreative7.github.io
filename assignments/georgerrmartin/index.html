@@ -89,11 +89,9 @@
 
       }
       aside {
-        background-image:url(../../images/events-bg.jpg);
         color: white;
         grid-area: aside;
-        padding: 10px 20px;
-      }
+        }
       aside h3 {
         font-family: 'Montaga', serif;
       }
@@ -110,8 +108,37 @@
         font-size: 16px;
         margin-left: 10px;
       }
+      #aside1 {
+        background-image:url(../../images/events-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px 20px;
+        margin: 0px;
+      }
+      .marginbutton {
+        margin-top: 30px;
+      }
+      #aside2 {
+        background-image: url(../../images/releases-bg.jpeg);
+        background-size: contain;
+
+        padding: 10px 20px;
+        margin: 0px;
+      }
+      #aside2 p {
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 10px;
+      text-align: left;
+
+      }
+      .asideimg {
+        margin: 0px;
+        width: 100%;
+      }
       #book {
         display: inline-block;
+        float: left;
         height: 150px;
       }
 
@@ -194,29 +221,68 @@
         </section>
         <section id="content">
           <h3>CURRENT GRRM BLOG POST</h3>
-          <div id="post1">
+          <div>
             <p class="title">Six Days to Joe</p>
             <p>Six days to go.  Six days to Joe. Leaphorn, that is. It is June 6 as I type this.
               Next weekend, JUNE 12, will see the debut of DARK WINDS on AMC  and AMC+.
               Yes, it has “Winds” in the…<span class="link"><a href="#">Read more »</a></span></p>
           </div>
-          <div id="post2">
-
+          <div>
+            <p class="title">Stonemaiden Is Back</p>
+            <p>There’s a brand new treat for Wild Cards fans over at Tor.com.
+              “Hearts of Stone” is a terrific new novelette from Emma Newman.
+              It marks the return of Stonemaiden, the Cornish ace first
+              introduced in KNAVES OVER QUEENS. That was…<span class="link"><a href="#">Read more »</a></span></p>
+          </div>
+          <div>
+            <p class="title">Here Come The Dragons</p>
+            <p>Are those dragons I see? Yes indeed. It’s May, which means the August 21 premiere of HOUSE OF THE DRAGON is only a few months away.
+              And HBO has just released a new trailer, to give you another taste of…<span class="link"><a href="#">Read more »</a></span></p>
+          </div>
+          <div>
+            <p class="title">The Winds of June</p>
+            <p>The Dark Winds will start blowing in June.   June 12, to be precise.
+              That’s the day that DARK WINDS, a new series based on the classic bestselling Navajo
+              detective novels by Tony Hillerman, will premiere on AMC and AMC+. I…<span class="link"><a href="#">Read more »</a></span></p>
+          </div>
+          <div>
+            <p class="title">The Dragons Are Coming...</p>
+            <p>… they’re on the wing, and will be arriving in August. Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/<span class="link"><a href="#">Read more »</a></span></p>
+          </div>
+          <div>
+            <img class="marginbutton"src="../../images/not-a-blog.png" alt="Not a Blog">
+          </div>
 
           </section>
 
         <aside>
           <div id="aside1">
             <h3>NEXT APPAREANCE<h3>
-            <p id="yellowtext">August 26 - 28th, 2022</p>
-            <a href="#">Bubonicon 53</a><span>Guest</span></p>
+            <div>
+              <p id="yellowtext">August 26 - 28th, 2022</p>
+            <a href="#">Bubonicon 53</a><span>Guest</span>
+          </div>
+            <div>
+              <img class="marginbutton" src="../../images/more-appearances.jpg">
+            </div>
           </div>
           <div id="aside2">
             <h3>NEXT PUBLICATION<h3>
-              <img id="book" src="../../images/grrm-book.jpg">
-              <p>July 02, 2022</p>
-              <p>FIRE & BLOOD</p>
-              <p>(HBO Tie-in Re-Release)</p>
+              <img id="book" src="../../images/grrm-book.jpg" alt="Fire & Blood Book">
+              <p>July 02, 2022
+              <br>FIRE & BLOOD
+              <br>
+              <span style="color: #a1a1a1; font-size: 12px;">(HBO Tie-in Re-Release)</span></p>
+
+              <div>
+                <img class="marginbutton" src="../../images/view-pubs.png">
+              </div>
+          </div>
+          <div>
+            <img class="asideimg" src="../../images/valyrian.jpeg">
+          </div>
+          <div>
+            <img class="asideimg" src="../../images/stagecoach.jpeg">
           </div>
           </aside>
 
