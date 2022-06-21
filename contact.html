@@ -6,47 +6,86 @@
     body {
       color: black;
       font-family: lato, sans-serif;
-      Font-size: 10pt;
+      font-size: 10pt;
       margin: 0px;
+      text-align: center;
     }
     header {
-      margin-bottom: 48px;
-      padding: 5px;
-    }
-    }
-    section {
-      margin: 0px;
-    }
-    section ul {
-      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px;
     }
     #logo {
       display: inline-block;
-      float; left;
+      height: 75px;
     }
-    nav {
-      vertical-align: top;
-      float: right;
+    .navbar {
+      padding-top: 10px;
     }
-    #navbar li {
+    #nav div {
       display: inline-block;
-      list-style-type: none;
       margin: 5px 15px;
     }
-    #navbar li a {
+    #nav div a {
       color: black;
       text-decoration: none;
     }
-    #navbar li:hover {
+    #nav div:hover {
       border-bottom: 2px solid skyblue;
       margin-bottom: auto;
     }
-    #navbar li:active {
+    #nav div:active {
       color: skyblue;
     }
     footer {
+      color: lightgrey;
+      padding: 50px;
       text-align: center;
     }
+    .textinput label {
+      display: block;
+    }
+    .textinput input {
+      margin: 4px 0px 12px 0px;
+      padding: 8px;
+      width: 200px;
+    }
+    #firstnamecontainer input {
+      border: 1px solid grey;
+      border-radius: 4px;
+      width: 50%;
+    }
+    #lastnamecontainer input {
+      border: 1px solid grey;
+      border-radius: 4px;
+      width: 50%;
+    }
+    textarea {
+      border: 1px solid grey;
+      border-radius: 4px;
+      font-family: sans-serif;
+      margin-top: 4px;
+      padding: 8px;
+      width: 50%;
+    }
+    input[type=radio] {
+      margin: 16px;
+    }
+    #buttoncontainer input[type=submit] {
+
+      background: black;
+      border: 0;
+      border-radius: 8px;
+      color: white;
+      margin-top: 50px;
+      padding: 12px 48px;
+
+    }
+    footer {
+      
+    }
+
     @media screen and (min-width: 800px) {
       section {
         margin-top: 50px;
@@ -60,6 +99,15 @@
         display: flex;
         flex-direction: column;
       }
+      #firstnamecontainer input {
+        width: 75%;
+      }
+      #lastnamecontainer input {
+        width: 75%;
+      }
+      textarea {
+        width: 75%;
+      }
     }
       @media screen and (max-width: 479px) {
 
@@ -69,27 +117,56 @@
           align-items: center;
         }
         #logo {
-          width: 250px;px;
-      }
+          height: 60px;
+        }
+        #firstnamecontainer input {
+          width: 75%;
+        }
+        #lastnamecontainer input {
+          width: 75%;
+        }
+        textarea {
+          width: 75%;
+        }
+        #buttoncontainer input[type=submit] {
+          width: 75%;
+        }
       }
     </style>
   </head>
   <body>
-    <header id="header">
+    <header id="header grid">
         <img id="logo"
-        width="300px"
         src="images/kplogo.png" />
     <nav id="nav">
-        <ul id="navbar">
-        <li><a href="index.html">Projects</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+        <div class="navbar"><a href="index.html">Projects</a></div>
+        <div class="navbar"><a href="aboutme.html">About Me</a></div>
+        <div class="navbar"><a href="contact.html">Contact</a></div>
+
     </nav>
     </header>
     <section>
-      <h1 style="text-align: center;">Contact Page</h1>
+      <h1>Get in touch</h1>
+      <form action="submission_action.php">
+
+        <div id="firstnamecontainer" class="textinput">
+          <label for="firstnameid">First Name:</label>
+          <input type="text" id="firstnameid" name="firstname">
+          </div>
+          <div id="lastnamecontainer"class="textinput">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastnameid" name="lastname">
+            </div>
+            <div>
+              <label for="codefeelingid">Comment:</label>
+              </div>
+      <textarea id="codefeelingsid" name="codefeelings"></textarea>
+       <div>
+         <div id="buttoncontainer">
+         <input type="submit" value="Submit">
+       </div>
     </section>
-      <footer>This is the footer</footer>
+      <footer>Copyright &copy2022</footer>
   </body>
 </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>PRINT DESIGN</title>
+    <style>
+      body {
+        color: black;
+        font-family: lato, sans-serif;
+        font-size: 10pt;
+        margin: 0px;
+      }
+      header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+      }
+      #logo {
+        display: inline-block;
+        height: 75px;
+      }
+      .navbar {
+        padding-top: 10px;
+      }
+      #nav div {
+        display: inline-block;
+        margin: 5px 15px;
+      }
+      #nav div a {
+        color: black;
+        text-decoration: none;
+      }
+      #nav div:hover {
+        border-bottom: 2px solid skyblue;
+        margin-bottom: auto;
+      }
+      #nav div:active {
+        color: skyblue;
+      }
+      section {
+        margin: 25px 200px;
+        text-align: justify;
+      }
+
+      .mockup {
+        margin: 25px 0px;
+        width: 100%;
+      }
+      footer {
+        color: lightgrey;
+        padding: 50px;
+        text-align: center;
+      }
+      @media screen and (min-width: 800px) {
+        section {
+          margin-top: 50px;
+        }
+        .box {
+          justify-content: center;
+        }
+       .images {
+         width: 500px;
+       }
+      }
+      @media screen and (min-width: 480px) and (max-width: 799px) {
+
+        header {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        .box {
+          grid-column: 1;
+
+        }
+        .images {
+          width: 600px;
+        }
+        section {
+          margin: 25px 100px;
+
+        }
+
+
+      }
+        @media screen and (max-width: 479px) {
+
+          header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          #logo {
+            height: 60px;
+          }
+          .box {
+            grid-column: 1;
+
+          }
+          .navbar a {
+            display: block;
+            margin: 5px;
+            padding-top: 10px;
+          }
+          .images {
+            width: 400px;
+          }
+          section {
+            margin: 25px 50px;
+
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <header id="header grid">
+        <img id="logo"
+        src="images/kplogo.png" />
+    <nav id="nav">
+
+        <div class="navbar"><a href="index.html">Projects</a></div>
+        <div class="navbar"><a href="aboutme.html">About Me</a></div>
+        <div class="navbar"><a href="contact.html">Contact</a></div>
+
+    </nav>
+    </header>
+    <section>
+    <h1>PRINT DESIGN</h1>
+    <p style="color: #0AAB;">Flyer</p>
+    <div>
+      <p>Proident praetermissum ex incididunt, doctrina illustriora
+        qui commodo, laborum aliqua ita doctrina sempiternum an sed
+        o export aliquip. Laborum velit probant vidisse, multos est
+        vidisse iis malis, do fabulas eu fabulas, legam nam
+        offendit. Nostrud aliqua tamen iudicem tamen.Commodo de
+        deserunt, nam consequat ubi senserit. Ingeniis hic
+        cupidatat. Ea vidisse in ullamco, nostrud nisi ipsum sed
+        veniam. Te deserunt ea laborum, cernantur relinqueret ad
+        nostrud, cernantur ea sunt laboris, cillum iudicem possumus,
+        de sed dolor incurreret est ullamco amet esse incididunt
+        quis, non veniam summis e officia, magna laboris si quae
+        cillum.</p>
+        <img class="mockup" src="images/FLYERS3.png">
+    </div>
+    <div>
+      <p>Proident praetermissum ex incididunt, doctrina illustriora
+        qui commodo, laborum aliqua ita doctrina sempiternum an sed
+        o export aliquip. Laborum velit probant vidisse, multos est
+        vidisse iis malis, do fabulas eu fabulas, legam nam
+        offendit. Nostrud aliqua tamen iudicem tamen.Commodo de
+        deserunt, nam consequat ubi senserit. Ingeniis hic
+        cupidatat. Ea vidisse in ullamco, nostrud nisi ipsum sed
+        veniam. Te deserunt ea laborum, cernantur relinqueret ad
+        nostrud, cernantur ea sunt laboris, cillum iudicem possumus,
+        de sed dolor incurreret est ullamco amet esse incididunt
+        quis, non veniam summis e officia, magna laboris si quae
+        cillum.</p>
+        <img class="mockup" src="images/FLYERS.png">
+    </div>
+</section>
+  </body>
+</html>
