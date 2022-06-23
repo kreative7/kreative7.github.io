@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <title>Contact</title>
+
     <style>
     body {
       color: black;
@@ -83,8 +84,23 @@
 
     }
     footer {
-      
+
     }
+    #slideshow  img {
+  position: relative;
+  margin: auto;
+  margin-top: 25px;
+  width: 75%;
+}
+    .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
     @media screen and (min-width: 800px) {
       section {
@@ -167,6 +183,16 @@
          <input type="submit" value="Submit">
        </div>
     </section>
+    <div id="slideshow">
+      <img id="slide1" class="mySlides slideshowimg" src="images/capi.png" alt="Package Design">
+      <img id="slide2" class="mySlides slideshowimg" src="images/flyer.png" alt="Flyer">
+      <img id="slide3" class="mySlides slideshowimg" src="images/cover.png" alt="Web Design">
+      <img id="slide4" class="mySlides slideshowimg" src="images/sali-info.png" alt="Infographic">
+
+      </div>
+
+
+      <script type="text/javascript" src="js/contact-slider.js"></script>
       <footer>Copyright &copy2022</footer>
   </body>
 </html>
