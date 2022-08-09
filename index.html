@@ -5,6 +5,7 @@
     <style>
       body {
         color: black;
+        box-sizing: border-box;
         font-family: lato, sans-serif;
         font-size: 10pt;
         margin: 0px;
@@ -14,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         padding: 24px;
+        grid-area: header;
       }
       #logo {
         display: inline-block;
@@ -37,20 +39,64 @@
       #nav div:active {
         color: skyblue;
       }
-      #grid {
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "box box"
-        "box box"
-        "footer footer"
+      section {
+        margin: 0px 25px;
+      }
+      .box {
+        background-position: center;
+        padding: 200px 250px;
+      }
+      .box1 {
+        background-image: url(images/flyer.png);
+        background-size: cover;
+        grid-area: box1;
 
       }
-    section {
-      justify-content: center;
+
+      .box1:hover {
+        background-image: url(images/whr.png);
+      }
+
+      .box2 {
+        background-image: url(images/cover.png);
+        background-size: cover;
+        grid-area: box2;
+      }
+
+      .box2:hover {
+        background-image: url(images/whr.png);
+      }
+
+      .box3 {
+        background-image: url(images/whr.png);
+        background-size: cover;
+        grid-area: box3;
+      }
+
+      .box3:hover {
+        background-image: url(images/whr.png);
+      }
+
+      .box4 {
+        background-image: url(images/capi.png);
+        background-size: cover;
+        grid-area: box4;
+      }
+
+      .box4:hover {
+        background-image: url(images/whr.png);
+      }
+
+      #grid {
       display: grid;
-      grid-template-columns: auto;
-      grid-gap: 5px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(50px, auto);
+      grid-template-areas:
+      "header header header"
+      "box1 box2 box3"
+      "box4 box5 box6"
+      "footer footer footer";
+
 
     }
 
@@ -63,12 +109,7 @@
         section {
           margin-top: 50px;
         }
-        .box {
-          justify-content: center;
-        }
-       .images {
-         width: 500px;
-       }
+
       }
       @media screen and (min-width: 480px) and (max-width: 799px) {
 
@@ -77,12 +118,15 @@
           display: flex;
           flex-direction: column;
         }
-        .box {
-          grid-column: 1;
+        #grid {
+          grid-template-columns: 2;
+          grid-template-areas:
+          "header header"
+          "box1 box2"
+          "box3 box4"
+          "box4 box5"
+          "footer footer";
 
-        }
-        .images {
-          width: 600px;
         }
 
       }
@@ -94,20 +138,31 @@
             align-items: center;
           }
           #logo {
-            height: 60px;
+            height: 80px;
           }
-          .box {
-            grid-column: 1;
 
-          }
           .navbar a {
             display: block;
             margin: 5px;
             padding-top: 10px;
           }
-          .images {
-            width: 400px;
+          .box {
+            padding: 150px 200px;
           }
+          #grid {
+            grid-template-columns: 1;
+            grid-template-areas:
+            "header"
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "footer";
+
+          }
+
         }
 
     </style>
@@ -124,11 +179,13 @@
 
     </nav>
     </header>
-      <section id="grid">
-          <div class="box"><a href="print-design.html"><img class="images" src="images/flyer.png"  alt="flyer"></a></div>
-          <div class="box"><a href="#"><img class="images" src="images/cover.png"  alt="cover"></a></div>
-          <div class="box"><a href="#"><img class="images" src="images/whr.png"  alt="logo"></a></div>
-          <div class="box"><a href="#"><img class="images" src="images/capi.png"  alt="logo"></a></div></div>
+      <section>
+        <div id="grid">
+          <div class="box1 box"><a href="print-design.html"></a></div>
+          <div class="box2 box"><a href="#"></a></div>
+          <div class="box3 box"><a href="#"></a></div>
+          <div class="box4 box"><a href="#"></a></div></div>
+        </div>
       </section>
       <footer>Copyright &copy 2022</footer>
 
