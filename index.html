@@ -44,37 +44,40 @@
       }
       .box {
         background-position: center;
-        padding: 200px 250px;
+        padding: 150px 200px;
       }
       .box1 {
-        background-image: url(images/flyer.png);
+        background-image: url(images/website.jpg);
         background-size: cover;
         grid-area: box1;
 
       }
 
       .box1:hover {
-        background-image: url(images/whr.png);
+        background-image: url(images/website-hover.jpg);
+        background-size: cover;
       }
 
       .box2 {
-        background-image: url(images/cover.png);
+        background-image: url(images/web-design.jpg);
         background-size: cover;
         grid-area: box2;
       }
 
       .box2:hover {
-        background-image: url(images/whr.png);
+        background-image: url(images/web-design-hover-01.jpg);
+        background-size: cover;
       }
 
       .box3 {
-        background-image: url(images/whr.png);
+        background-image: url(images/print.jpg);
         background-size: cover;
         grid-area: box3;
       }
 
       .box3:hover {
-        background-image: url(images/whr.png);
+        background-image: url(images/print-hover.jpg);
+        background-size: cover;
       }
 
       .box4 {
@@ -85,6 +88,27 @@
 
       .box4:hover {
         background-image: url(images/whr.png);
+        background-size: cover;
+      }
+      .box5 {
+        background-image: url(images/capi.png);
+        background-size: cover;
+        grid-area: box5;
+      }
+
+      .box5:hover {
+        background-image: url(images/whr.png);
+        background-size: cover;
+      }
+      .box6 {
+        background-image: url(images/capi.png);
+        background-size: cover;
+        grid-area: box6;
+      }
+
+      .box6:hover {
+        background-image: url(images/whr.png);
+        background-size: cover;
       }
 
       #grid {
@@ -118,13 +142,17 @@
           display: flex;
           flex-direction: column;
         }
+        .box {
+          padding: 140px 160px;
+        }
+
         #grid {
-          grid-template-columns: 2;
+          grid-template-columns: repeat(2, 1fr);
           grid-template-areas:
           "header header"
           "box1 box2"
           "box3 box4"
-          "box4 box5"
+          "box5 box6"
           "footer footer";
 
         }
@@ -184,7 +212,10 @@
           <div class="box1 box"><a href="print-design.html"></a></div>
           <div class="box2 box"><a href="#"></a></div>
           <div class="box3 box"><a href="#"></a></div>
-          <div class="box4 box"><a href="#"></a></div></div>
+          <div class="box4 box"><a href="#"></a></div>
+          <div class="box5 box"><a href="#"></a></div>
+          <div class="box6 box"><a href="#"></a></div>
+
         </div>
       </section>
       <footer>Copyright &copy 2022</footer>
