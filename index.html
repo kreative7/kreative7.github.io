@@ -8,7 +8,7 @@
         box-sizing: border-box;
         font-family: lato, sans-serif;
         font-size: 10pt;
-        margin: 25px 0px;
+        margin: 0px 25px;
       }
       header {
         align-items: center;
@@ -159,7 +159,9 @@
 
       }
         @media screen and (max-width: 479px) {
-
+          body {
+            margin: 0px;
+          }
           header {
             display: flex;
             flex-direction: column;
@@ -174,10 +176,10 @@
             margin: 5px;
             padding-top: 10px;
           }
-          .box {
-            padding: 150px 200px;
-          }
+
+
           #grid {
+            display: block;
             grid-template-columns: 1;
             grid-template-areas:
             "header"
