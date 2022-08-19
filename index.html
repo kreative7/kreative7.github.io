@@ -3,12 +3,16 @@
   <head>
     <title>Kathian Pellot Portfolio</title>
     <style>
+    * {
+      box-sizing: border-box;
+    }
       body {
         color: black;
         box-sizing: border-box;
         font-family: lato, sans-serif;
         font-size: 10pt;
         margin: 0px 25px;
+
       }
       header {
         align-items: center;
@@ -39,12 +43,11 @@
       #nav div:active {
         color: skyblue;
       }
-      section {
-        margin: 0px 25px;
-      }
+      
       .box {
         background-position: center;
-        padding: 150px 200px;
+        max-width: 100%;
+        padding: 50%;
       }
       .box1 {
         background-image: url(images/website.jpg);
